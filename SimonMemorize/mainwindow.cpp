@@ -32,5 +32,6 @@ void mainwindow::on_btn_jouer_clicked()
 void mainwindow::on_btn_exit_clicked()
 {
     close(); // Ferme la fenêtre principale
+    QCoreApplication::exit();
 }
 

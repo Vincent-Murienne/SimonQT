@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>Arp.jpg</file>
+    </qresource>
+</RCC>
