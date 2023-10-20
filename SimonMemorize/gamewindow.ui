@@ -13,6 +13,12 @@
   <property name="windowTitle">
    <string>Game</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#btn_rouge{background-color: red; border-top-left-radius: 80px 80px;}
+#btn_bleu{background-color: blue; border-bottom-left-radius: 80px 80px;}
+#btn_vert{background-color: green; border-top-right-radius: 80px 80px;}
+#btn_jaune{background-color: yellow;border-bottom-right-radius: 80px 80px;}</string>
+  </property>
   <widget class="QPushButton" name="btn_rouge">
    <property name="geometry">
     <rect>
@@ -29,7 +35,7 @@
   <widget class="QPushButton" name="btn_vert">
    <property name="geometry">
     <rect>
-     <x>430</x>
+     <x>420</x>
      <y>50</y>
      <width>231</width>
      <height>141</height>
@@ -43,7 +49,7 @@
    <property name="geometry">
     <rect>
      <x>110</x>
-     <y>250</y>
+     <y>230</y>
      <width>231</width>
      <height>141</height>
     </rect>
@@ -55,8 +61,8 @@
   <widget class="QPushButton" name="btn_jaune">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>250</y>
+     <x>420</x>
+     <y>230</y>
      <width>231</width>
      <height>141</height>
     </rect>
@@ -65,6 +71,70 @@
     <string/>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>50</y>
+     <width>541</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color : black;
+border-radius: 80px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_end">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>781</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Script MT Bold</family>
+     <pointsize>36</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: purple;</string>
+   </property>
+   <property name="text">
+    <string>Vous avez perdu !  Merci d'avoir joué</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="compteur_lb">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>370</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>btn_rouge</zorder>
+  <zorder>btn_vert</zorder>
+  <zorder>btn_bleu</zorder>
+  <zorder>btn_jaune</zorder>
+  <zorder>label_end</zorder>
+  <zorder>compteur_lb</zorder>
  </widget>
  <resources/>
  <connections/>
